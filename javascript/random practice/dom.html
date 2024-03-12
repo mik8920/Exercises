@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+
+    <!-- inline styling -->
+   <!--  <style>
+        .highlight {
+          color: white;
+          background-color: black;
+          padding: 10px;
+          width: 250px;
+          text-align: center;
+        }
+      </style> -->
+      
+</head>
+
+<body>
+    <section>
+        <img src="dinosaur.png"
+            alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+    </section>
+</body>
+
+
+<script>
+    const link = document.querySelector("a"); /*we store the element*/
+    link.textContent = "Mozilla Developer Netowrk"; /*changing the text inside the link*/
+    link.href = "https://developer.mozilla.org"; /*changing the URL the link is pointing to*/
+    const sect = document.querySelector("section"); /*grabbing a reference to our <section> element - the queryselector matches elements in docs that matches the selector*/
+    const para = document.createElement("p"); /*creating a paragraph*/
+    para.textContent = "we hope you enjoyed the ride.";
+    sext.appendChild(para); /*appending the new paragraph*/
+    const text = document.createTextNode("- the premier source for web development knowledge.",); /*adding a text node to the paragraph the link sits inside*/
+    const linkPara = document.querySelector("p"); /*a reference to the paragraph the link is inside*/
+
+    sect.appendChild(linkPara); /*moving paragraph with the link inside it to the bottom of the section*/
+    /* if you want to make a copy and add the above as well -> "Node.cloneNode()" */
+    sect.removeChild(linkPara); /*removing a node - Node.removeChild() for copy*/
+    linkPara.remove(); /*removing a node based only on a reference to itself*/
+
+    /* inline styling*/
+/*     para.style.color = "white";
+    para.style.backgroundColor = "black";
+    para.style.padding = "10px";
+    para.style.width = "250px";
+    para.style.textAlign = "center"; */
+
+    /* para.setAttribute("class", "highlight"); */   /*takes two arguments, the attribute you want to set on the element and the value you want to set it to*/
+
+
+
+    /*Active Learning*/
+
+
+
+
+
+
+
+
+</script>
+
+</html>

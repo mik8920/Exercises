@@ -1,0 +1,15 @@
+
+*{background-color:whitesmoke;}
+.first {
+    background-color:magenta; color:greenyellow;
+
+}
+
+.second {
+    background-color:greenyellow; color:magenta;
+
+}
+
+.first, .second {
+    font-size:50px; font-family: Helvetica, Times 'Times New Roman', Times, serif;
+}

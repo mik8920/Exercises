@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Practice</title>
+</head>
+
+<body>
+    <script>
+
+        let add7 = (number) => number + 7
+
+        let multiply = (number1, number2) => { return (number1 * number2) }
+
+        let string = prompt('enter some text')
+        let firstletter = null;
+        let restOfString = null;
+        let newString = null;
+
+        capitalize(string);
+
+        function capitalize(string) {
+            function capitalize(string) {
+                firstLetter = string.slice(0, 1);
+                firstLetter = firstLetter.toUpperCase();
+                restOfString = string.slice(1);
+                restOfString = restOfString.toLowerCase();
+                newString = firstLetter + restOfString;
+            }
+        }
+
+        console.log(newString);
+        console.log(firstLetter);
+        console.log(restOfString);
+
+
+
+
+
+        let myWord = prompt('Enter a word. The last letter will be returned.');
+
+        lastLetter(myWord);
+
+        function lastLetter(myWord) {
+            let letter = myWord.slice(-1);
+            console.log(letter);
+            return letter;
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
